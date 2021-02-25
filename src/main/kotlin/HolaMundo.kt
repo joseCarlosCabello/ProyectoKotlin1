@@ -31,4 +31,22 @@ fun main(args: Array<String>)
 
     println(parrafo.trimMargin("**"))
 
+
+
+    //for y rangos
+
+    println("\t\t\t\n\n Cilco for\n")
+    val uno_cinco= 1..5
+    for(i in uno_cinco){
+        println(i)
+    }
+    println("\t\n Letras")
+    for (letra in 'A'..'D') {
+        println(letra)
+        }
+
+
+    //if
+
+
 }
