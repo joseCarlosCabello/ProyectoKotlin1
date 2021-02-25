@@ -58,12 +58,27 @@ fun main(args: Array<String>)
     //if
 
     println("\t\t\t\n\n If\n")
-    val num1= 1
+    var num1= 1
     val num2=1
     if (num1.equals(num2))
         println("son iguales")
     else
         println("son diferentes")
+
+    println("\t\t\t\n\n When \n")
+    for(i in 0..7)
+    {
+        num1++
+        if (num1==2||num1.equals(4)||num1==6)
+        {
+            when(num1)
+            {
+                in 1..3 -> println("esta dentro de 1-3")
+                in 4..5 -> println("esta dentro de 3-5")
+                !in 1..5 -> println("No esta dentro de 1-5")
+            }
+        }
+    }
 
 
 }
