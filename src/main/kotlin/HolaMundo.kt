@@ -97,6 +97,15 @@ fun main(args: Array<String>)
     }
 
 
+    //nulls
+
+    println("\t\t\t\n\n nulls \n")
+    var i:Int? = null //null
+    i?.plus(num2) //verifica si el numero es nulo
+    println(i)
+
+
+
 
 
 }
