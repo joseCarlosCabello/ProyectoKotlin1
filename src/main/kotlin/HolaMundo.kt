@@ -44,9 +44,26 @@ fun main(args: Array<String>)
     for (letra in 'A'..'D') {
         println(letra)
         }
+    println("\t\n Numeros cuenta regresiva: ")
 
+    for(i in '5' downTo '1'){
+        println(i)
+    }
+
+    println("\t\n Letras cuenta regresiva: ")
+    for(letra in 'D' downTo 'A'){
+        println(letra)
+    }
 
     //if
+
+    println("\t\t\t\n\n If\n")
+    val num1= 1
+    val num2=1
+    if (num1.equals(num2))
+        println("son iguales")
+    else
+        println("son diferentes")
 
 
 }
