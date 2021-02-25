@@ -1,3 +1,5 @@
+import java.lang.Exception
+
 fun main(args: Array<String>)
 {
     println("adios mundo")
@@ -104,7 +106,30 @@ fun main(args: Array<String>)
     i?.plus(num2) //verifica si el numero es nulo
     println(i)
 
+    //try catch
+    try {
+        var compute: String? =null
+        var longitud: Int = compute!!.length    //el !! nos permite utilizar valores nulos
+    }
+    catch (e: Exception )
+    {
+        println("A ocurrido un error")
+    }
 
+    //Elvis
+
+    var cadena:String?= null
+    val longitudT: Int=cadena?.length ?: 0  //basicamente es un "si es null imprime 0"
+    println("longitud: $longitudT")
+
+
+    //listas
+
+    val listaDeNulos: List<Int?> = listOf<Int?>(1,null,null,10)
+    println("Lista Con nulos $listaDeNulos")
+
+    val listaSinNulos: List<Int?> = listaDeNulos.filterNotNull()
+    println("Lista sin nulos $listaSinNulos")
 
 
 
