@@ -132,5 +132,27 @@ fun main(args: Array<String>)
     println("Lista sin nulos $listaSinNulos")
 
 
+    //arrays
 
+    var cantates: Array<String> = arrayOf("eunbi","chawon","hitomi")
+
+    val numeros= intArrayOf(1,2,3,4,5)
+
+    for((pos,cantantes) in cantates.withIndex())
+    {
+        println("Posicion ${pos.plus(1)} Cantante:  $cantantes")
+    }
+    val suma= numeros.sum()
+    println("La sumatoria es: $suma")
+    cantates= cantates.plus("Sana")
+    println("Nuevo Arreglo de cantantes: ")
+    for((pos,cantantes) in cantates.withIndex())
+    {
+        println("Posicion ${pos.plus(1)} Cantante:  $cantantes")
+    }
+    cantates = cantates.reversedArray()
+    for((pos,cantante) in cantates.withIndex())
+    {
+        println("Posicion ${pos.plus(1)} Cantante:  $cantante")
+    }
 }
