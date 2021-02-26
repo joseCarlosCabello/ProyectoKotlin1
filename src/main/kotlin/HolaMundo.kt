@@ -155,4 +155,28 @@ fun main(args: Array<String>)
     {
         println("Posicion ${pos.plus(1)} Cantante:  $cantante")
     }
+
+    //funciones y expresiones
+
+    println("Raiz cuadrada de 4 es: ${Math.sqrt(4.0)}")
+    cantates=reversa(cantates)
+
+     imprimir_arreglo(cantates)
+
+}
+
+fun reversa (arreglo: Array<String>):Array<String>
+{
+    var arreglo2: Array<String>
+    arreglo2=arreglo.reversedArray()
+    return arreglo2
+}
+
+fun imprimir_arreglo(arreglo: Array<String>) //no retorna nada
+{
+    println("El arreglo es : ")
+    for(a in arreglo)
+    {
+     println("$a")
+    }
 }
